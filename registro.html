@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap" 
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="estilosRegistro.css">
+
+    <title>registro</title>
+</head>
+
+<body>
+    
+    <!-- Creacion del formulario -->
+    <div class="container contenedor-de-vuelta-a-inicio">
+        <div class="row">
+            <div class="col-xl-12">
+                <a class="navbar-brand text-white fs-3 name-bank" href="#">INOX BANK™  -  Create by Esteban Mejia</a>
+            </div>
+        </div>
+    </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Inicio del lado izquierdo-->
+                <div class="col-lg-6 lado-izquierdo">
+                    <h1>‘La manera más segura y fácil de cuidar tus finanzas’</h1>
+
+                <h4>Intercambia entre múltiples clases de activos diferentes
+                    desde una sola cuenta. Además de disfrutar de transacciones
+                    de alta seguridad de una cuenta a otra a un bajo porcentaje de comisión.
+                </h4>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="logoBTC.png" alt="">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="logoLithcoin.png" alt="">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="LogoSolana.png" alt="" class="solanaLogo">
+                    </div>
+                </div>
+                </div>
+                <!-- inicio del lado del formulario-->
+                <div class="col-lg-6 lado-formulario">
+                    <div class="card border-dark m-3" style="max-width: 40rem;  background: transparent; border: none;">
+                        
+                        <div class="card-body float-center">
+                            <div class="titulo-registro"><h3>Registro</h3></div>
+                            <div class="row estilos-completos">
+                                <div class="col-8">
+                                    <input id="nombre" class="m-1 float-left" type="text" placeholder="Ingrese nombre">
+                                    <input id="apellido" class="m-1 float-left" type="text" placeholder="Ingrese apellido">
+                                    <br>
+                                    <select id="tdoc" class="m-1 float-left  selector">
+                                        <option value="1">Tipo de Documento</option>
+                                        <option value="2">Tarjeta de Identidad</option>
+                                        <option value="3">Cédula de Ciudadania</option>
+                                        <option value="4">Cedula de Extranjeria</option>
+                                    </select>
+                                    <br>
+                                    <input id="documento" class="m-1 float-left" type="number" placeholder="Ingrese # documento">
+                                    <input id="ciudad" class="m-1 float-left" type="text" placeholder="Ciudad">
+                                    <input id="correo" class="m-1 float-left" type="email" placeholder="Ingrese su correo">
+                                    <input id="direccion" class="m-1 float-left" type="text" placeholder="Ingrese dirección">
+                                    <input id="telefono" class="m-1 float-left" type="number" placeholder="Ingrese telefono">
+                                    <input id="edad" class="m-1 float-left" type="number" placeholder="Edad"><br><br>
+                                    <div class="boton-registro-listar">
+                                        <button class="bontregistrar" onclick="registrar()">Registrar</button>
+                                        <button class="botonlistar" onclick="listar()">Listar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Creación de tabla de registro de usuarios -->          
+            <div class="row">
+                <div class="col-md-3 my-2">
+                    <table class="table table-fluid table-hover table-primary">
+                        <thead>
+                            <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Tipo</th>
+                            <th>Documento</th>
+                            <th>Ciudad</th>
+                        </tr>
+                        </thead>
+                        <tbody id="usuarios">
+        
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-3 my-2">
+                    <table class="table table-fluid table-hover table-primary">
+                        <thead>
+                            <tr>
+                                <th>Correo</th>
+                                <th>Direccion</th>
+                                <th>Telefono</th>
+                                <th>Edad</th>
+                            </tr>
+                        </thead>
+                        <tbody id="datos">
+        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        </div>
+    </center>
+    <script src="main.js"></script>
+</body>
+
+</html>

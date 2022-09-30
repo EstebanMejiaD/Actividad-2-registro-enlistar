@@ -1,0 +1,297 @@
+* {
+    font-family: 'Inconsolata', monospace;
+}
+body {
+    background: rgb(5,25,35);
+    background: 
+    linear-gradient(270deg, 
+    rgba(5,25,35,1) 0%, 
+    rgba(0,100,148,1) 48%, 
+    rgba(0,166,251,1) 100%);
+}
+.name-bank {
+    letter-spacing: 0.3625rem ;
+    
+}
+.contenedor-de-vuelta-a-inicio {
+    background-color: transparent;
+    height: 70px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 10px;
+    padding-left: 50px;
+    
+}
+.contenedor-de-vuelta-a-inicio img {
+    width: 60px;
+}
+
+
+
+/* Diseño del lado izquierdo del inicio de sesion, informacion.*/
+.lado-izquierdo {
+
+    width: 45%;
+    margin-right: 20px;
+    height: 90vh;
+    align-items: center;
+    text-align: inherit;
+    padding: 30px 60px;
+    }
+    .lado-izquierdo h1 {
+        color: #FFFFFF;
+    }
+    .lado-izquierdo h4 {
+        color: #FFFFFF;
+    }
+    .solanaLogo {
+        width: 100px;
+    }
+
+
+    /* inicio de lado formulario*/
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.titulo-registro {
+    text-align: center;
+
+}
+.titulo-registro h3 {
+    color: #0d87bf;
+}
+.card-body{
+
+    padding: 20px 50px;
+        border-radius: 20px;
+        background-color: #ffffff;
+        height: 100%;
+        width: 90%;
+        transition: all 0.5s;
+        box-shadow:  7px 15px 25px #006494;
+
+}
+
+
+
+.table{
+    display:inline !important;
+}
+
+.estilos-completos input{
+    width: 100%;
+    outline: none;
+    border: 1px solid #064d76;
+    border-radius: 5px;
+    color: #003554;
+    height: 45px;
+    transition: all 0.5s;
+}
+
+.estilos-completos input::placeholder {
+    color: #006494;
+}
+.selector {
+    width: 100%;
+    outline: none;
+    border: 1px solid #064d76;
+    border-radius: 5px;
+    color: #003554;
+    height: 45px;
+    transition: all 0.5s;
+}
+
+.bontregistrar {
+    text-decoration: none;
+        border: none;
+        border-radius: 50px;
+        background: #006494;
+        color: #fff;
+        padding: 8px 20px;
+        transition: all 0.6s;
+        margin-right: 5px ;
+}
+.bontregistrar:hover {
+    color: #fff;
+       background: #0380ba;
+}
+
+
+.botonlistar {
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    color: #006494;
+    background: transparent;
+    padding: 8px 20px;
+    transition: background-color .3s;
+}
+.botonlistar:hover {
+    background-color: #006494;
+    color: #fff;
+}
+.botonlistar:active {
+    animation: gradient 90ms;
+        background: #006494;
+        color: #006494;
+        box-shadow: none;
+}
+@keyframes gradient {
+0% {
+background: radial-gradient(circle at center, rgba( 255, 125 , 125, 0 ) 0%, #006494 0%, #006494 100%);
+}
+25% {
+background: radial-gradient(circle at center, #006494 24%, #006494 25%, #006494 100%);
+}
+50% {
+background: radial-gradient(circle at center, #0775a8 49%, #006494 50%, #006494 100%);
+}
+75% {
+background: radial-gradient(circle at center, #0d87bf 74%, #006494 75%, #006494 100%);
+}
+100% {
+color: #fff;
+background: radial-gradient(circle at center, #1197d4 99%, #006494 100%, #006494 100%);
+}
+}
+.boton-registro-listar {
+    text-align: center;
+    margin-top: 20px;
+}
+.boton-registro-listar button {
+    width: 80%;
+}
+.boton-registro-listar button:first-child {
+    margin-bottom: 10px;
+}
+
+
+
+    .lado-formulario {
+    
+        height: 100%;
+        padding: 10px;
+        align-items: center;
+        text-align: left;
+        
+    }
+    
+    .formulario-login {
+        padding: 20px 50px;
+        border-radius: 20px;
+        background-color: #ffffff;
+        height: 100%;
+        width: 90%;
+        transition: all 0.5s;
+        box-shadow:  7px 15px 25px #006494;
+    }
+    .head-form h3 {
+        font-size: 35px;
+    }
+    
+    .formulario-login h3 {
+        
+        color: #003554;
+    }
+    .formulario-login small {
+        color: #006494;
+        
+    }
+    
+    .linkRegister {
+        text-decoration: none;
+        color: #004f74;
+        font-size: 17px;
+    }
+    
+    .linkRegister:hover {
+        padding-bottom: 3px;
+        border-bottom: 2px solid #0b6189;
+        text-decoration: none;
+        color: #0b6189;
+    }
+    
+    
+    
+    .correo-form {
+        margin-top: 25px;
+    
+    }
+    .correo-form input {
+        width: 100%;
+        outline: none;
+        border: 1px solid #064d76;
+        border-radius: 5px;
+        color: #003554;
+        height: 45px;
+        transition: all 0.5s;
+    
+    
+    }
+    .correo-form p {
+        color: #003554;
+    }
+    .correo-form input::placeholder {
+        color: #006494;
+    }
+    .correo-form input:focus {
+        box-shadow: 0px 2px 7px #006494;
+        height: 47px;
+    }
+    
+    
+    
+    
+    .contrasena-form {
+       margin-top: 20px;
+    
+    }
+    
+    .contrasena-form input {
+        width: 100%;
+        outline: none;
+        border: 1px solid #064d76;
+        border-radius: 5px;
+        color: #003554;
+        height: 45px;
+        transition: all 0.5s;
+    }
+    .contrasena-form p {
+        color: #003554;
+    }
+    .contrasena-form input::placeholder {
+        color: #006494;
+    }
+    .contrasena-form input:focus {
+        box-shadow: 0px 2px 7px #006494;
+        height: 47px;
+    }
+    
+    .boton-login{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .boton-login input {
+        width: 80%;
+    }
+    
+    .btn-register {
+        text-decoration: none;
+        border: none;
+        border-radius: 50px;
+        background: #006494;
+        color: #fff;
+        padding: 8px 20px;
+        transition: all 0.6s;
+        margin-right: 5px ;
+    }
+    
+    .btn-register:hover {
+       color: #fff;
+       background: #0380ba;
+    
+    }
